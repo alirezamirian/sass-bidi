@@ -1,0 +1,5 @@
+@mixin bidi-rtl{
+  html[dir=rtl] & {
+    @content;
+  }
+}

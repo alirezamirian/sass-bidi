@@ -1,0 +1,24 @@
+{
+  "name": "sass-bidi",
+  "version": "1.0.0",
+  "description": "Handy mixins for handling rtl and ltr at the same time",
+  "main": "main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirezamirian/sass-bidi.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "bidi"
+  ],
+  "author": "Alireza Mirian (alireza.mirian@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirezamirian/sass-bidi/issues"
+  },
+  "homepage": "https://github.com/alirezamirian/sass-bidi#readme"
+}

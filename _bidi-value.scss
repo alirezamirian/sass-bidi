@@ -1,0 +1,7 @@
+@mixin bidi-value($prop, $ltr-value, $rtl-value) {
+  #{$prop}: $ltr-value;
+
+  html[dir=rtl] & {
+    #{$prop}: $rtl-value;
+  }
+}
