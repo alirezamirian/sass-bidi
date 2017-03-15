@@ -1,0 +1,9 @@
+@import '../bidi-value';
+@import '../bidi-prop';
+
+.bidi-color-black-red{
+ @include bidi-value(color, rgb(0, 0, 255), rgb(255, 0, 0));
+}
+.bidi-bg-fg-red{
+ @include bidi-prop(background-color, color, rgb(255, 0, 0));
+}

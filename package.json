@@ -4,7 +4,7 @@
   "description": "Handy mixins for handling rtl and ltr at the same time",
   "main": "main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd ./node_modules/karma/bin/ && karma start ../../../karma.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/alirezamirian/sass-bidi/issues"
   },
-  "homepage": "https://github.com/alirezamirian/sass-bidi#readme"
+  "homepage": "https://github.com/alirezamirian/sass-bidi#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "jquery": "^3.1.1",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-scss-preprocessor": "^2.0.0",
+    "node-sass": "^4.5.0"
+  }
 }
