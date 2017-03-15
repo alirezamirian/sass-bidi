@@ -1,7 +1,19 @@
 @mixin bidi-value($prop, $ltr-value, $rtl-value) {
   #{$prop}: $ltr-value;
 
-  html[dir=rtl] & {
+  [dir=rtl] & {
+    #{$prop}: $rtl-value;
+  }
+  [dir=rtl] [dir=ltr] &{
+    #{$prop}: $ltr-value;
+  }
+  &[dir=rtl]{
+    #{$prop}: $rtl-value;
+  }
+  [dir=rtl] &[dir=ltr]{
+    #{$prop}: $ltr-value;
+  }
+  :host-context([dir=rtl]) & {
     #{$prop}: $rtl-value;
   }
 }

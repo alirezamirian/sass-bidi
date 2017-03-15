@@ -1,8 +1,19 @@
 @mixin bidi-prop($prop-ltr, $prop-rtl, $value){
-  html[dir=ltr] &{
+  [dir=ltr] &:not([dir=rtl]),
+  [dir=rtl] [dir=ltr] &:not([dir=rtl]),
+  &[dir=ltr] {
     #{$prop-ltr}: $value;
   }
-  html[dir=rtl] & {
+  [dir=rtl] &:not([dir=ltr]),
+  [dir=ltr] [dir=rtl] &:not([dir=ltr]),
+  &[dir=rtl] {
+    #{$prop-rtl}: $value;
+  }
+
+  :host-context([dir=ltr]) &:not([dir=rtl]){
+    #{$prop-ltr}: $value;
+  }
+  :host-context([dir=rtl]) &:not([dir=ltr]){
     #{$prop-rtl}: $value;
   }
 }
