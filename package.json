@@ -1,6 +1,6 @@
 {
   "name": "sass-bidi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Handy mixins for handling rtl and ltr at the same time",
   "main": "main.scss",
   "scripts": {
