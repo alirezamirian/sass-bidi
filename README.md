@@ -1,7 +1,7 @@
 # sass-bidi
 Handy mixins for handling rtl and ltr at the same time
 
-#Installation
+# Installation
 ```
 npm install sass-bidi --save-dev
 ```
