@@ -4,7 +4,7 @@
   "description": "Handy mixins for handling rtl and ltr at the same time",
   "main": "main.scss",
   "scripts": {
-    "test": "cd ./node_modules/karma/bin/ && karma start ../../../karma.config.js"
+    "test": "karma start ./karma.config.js"
   },
   "repository": {
     "type": "git",
